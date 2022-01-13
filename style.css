@@ -1,0 +1,188 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./imagenes/fondo.jpg);
+    width: auto;
+    height: auto;
+}
+header{
+    width: 100%;
+    height: 300px;   
+}
+nav{
+    width: 150px;
+    height: 50px;
+    float: right;
+    margin-top: 5%;
+    margin-right: 50%;
+
+}
+.logo{
+    font-size: 40px;
+    text-decoration: none;
+    color: black; 
+    align-items: center; 
+}
+.btn{
+    width: auto;
+    height: auto;
+    display: inline;
+    position: absolute;
+    top: 20%;
+    word-spacing: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.titulos{
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+main{
+    background-color: rgba(185, 129, 39, 0.657);
+    width: auto;
+    height: auto;
+    /* flex-wrap: wrap;
+    display: flex; */
+}
+.ofertas{
+    width: 20%;
+    height: auto;
+    font-size: 40px;
+    position: absolute;
+    right: 43%;
+}
+.imgremera{
+    width: 600px;
+    height: 650px;
+    padding: 25px;
+    margin-top: 5%;
+    border-radius: 10%;
+    flex-wrap: wrap;
+    display: flex;
+}
+.skates{
+    width: 20%;
+    height: auto;
+    font-size: 40px;
+    position: absolute;
+    right: 43%;
+}
+.imgskates{
+    width: 600px;
+    height: 650px;
+    padding: 25px;
+    margin-top: 5%;
+    border-radius: 10%;
+}
+footer{
+    width: auto;
+    height: auto; 
+    background-color: black;
+}
+.comentarios{
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+    margin-left: 10px;
+}
+.articulo{
+    color: white;
+    width: 300px;
+    height: 40%;
+    margin-left: 10px;
+}
+.bttw{
+    width: 50px;
+
+}
+.sectionfooter{
+    /* float: right; */
+    height:5%; 
+    display: grid;
+    justify-items: right;
+    padding: 25px;
+}
+.redes{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+}
+.logoComunidad{
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    right: 43%;
+}
+.video{
+    margin-top: 5%;
+    position: absolute;
+    right: 43%;
+}
+.mainComunidad2{
+    height: 400px;
+    width: auto;
+}
+form{
+    width: auto;
+    height: 600px;
+}
+.mainProductos{
+    height: auto;
+    width: auto;
+}
+.mainUbicacion{
+    height: 600px;
+    width: 100%;
+}
+.centrar{
+    width: 20%;
+    height: auto;
+    font-size: 40px;
+    position: absolute;
+    right: 43%;
+}
+.mapa{
+    width: 500px;
+    height: 500px;
+    font-size: 40px;
+    position: absolute;
+    right: 43%;
+    margin-top: 50px;
+}
+.gridsRemera{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    display: grid;
+    gap: 20px;
+}
+.gridsSkates{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    display: grid;
+}
+@media screen and (max-width: 769px) {
+    .gridsRemera{
+        grid-template-columns: auto;
+        align-items: center;
+    }
+    .imgremera{
+        width: 350px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 769px) {
+    .gridsSkates{
+        grid-template-columns: auto;
+    }
+    .imgskates{
+        width: 350px;
+        height: auto;
+    }
+}
