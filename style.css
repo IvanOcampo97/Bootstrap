@@ -21,10 +21,23 @@ nav{
 
 }
 .logo{
+    width: 20%;
+    height: auto;
     font-size: 40px;
+    position: absolute;
+    right: 43%;
     text-decoration: none;
-    color: black; 
-    align-items: center; 
+    color: black;
+}
+.logo-productos{
+    width: 20%;
+    height: auto;
+    font-size: 40px;
+    position: absolute;
+    right: 50%;
+    text-decoration: none;
+    color: black;
+    padding: 100px;
 }
 .btn{
     width: auto;
@@ -134,7 +147,7 @@ form{
     height: 600px;
 }
 .mainProductos{
-    height: auto;
+    height: 500px;
     width: auto;
 }
 .mainUbicacion{
