@@ -1,3 +1,5 @@
+@import "varss";
+
 *{
     margin: 0%;
     padding: 0%;
@@ -10,25 +12,26 @@ body{
 }
 header{
     width: 100%;
-    height: 300px;   
+    height: 300px;  
+    nav{
+        width: 150px;
+        height: 50px;
+        float: right;
+        margin-top: 5%;
+        margin-right: 50%;
+    
+    }
+    .logo{
+        width: 20%;
+        height: auto;
+        font-size: 40px;
+        position: absolute;
+        right: 43%;
+        text-decoration: none;
+        color: black;
+    }
 }
-nav{
-    width: 150px;
-    height: 50px;
-    float: right;
-    margin-top: 5%;
-    margin-right: 50%;
 
-}
-.logo{
-    width: 20%;
-    height: auto;
-    font-size: 40px;
-    position: absolute;
-    right: 43%;
-    text-decoration: none;
-    color: black;
-}
 .logo-productos{
     width: 20%;
     height: auto;
@@ -55,19 +58,25 @@ nav{
     color: black;
 }
 main{
-    background-color: rgba(185, 129, 39, 0.657);
+    background-color: $background;
     width: auto;
     height: auto;
-    /* flex-wrap: wrap;
-    display: flex; */
+    .ofertas{
+        width: 20%;
+        height: auto;
+        font-size: 40px;
+        position: absolute;
+        right: 43%;
+    }
+    .skates{
+        width: 20%;
+        height: auto;
+        font-size: 40px;
+        position: absolute;
+        right: 43%;
+    }
 }
-.ofertas{
-    width: 20%;
-    height: auto;
-    font-size: 40px;
-    position: absolute;
-    right: 43%;
-}
+
 .imgremera{
     width: 600px;
     height: 650px;
@@ -76,13 +85,6 @@ main{
     border-radius: 10%;
     flex-wrap: wrap;
     display: flex;
-}
-.skates{
-    width: 20%;
-    height: auto;
-    font-size: 40px;
-    position: absolute;
-    right: 43%;
 }
 .imgskates{
     width: 600px;
@@ -95,30 +97,29 @@ footer{
     width: auto;
     height: auto; 
     background-color: black;
-}
-.comentarios{
-    font-size: 40px;
-    text-decoration: none;
-    color: white;
-    padding: 25px;
-    margin-left: 10px;
+    .comentarios{
+        font-size: 40px;
+        text-decoration: none;
+        color: white;
+        padding: 25px;
+        margin-left: 10px;
+    }
+    .bttw{
+        width: 50px;
+    
+    }
+    .sectionfooter{
+        height:5%; 
+        display: grid;
+        justify-items: right;
+        padding: 25px;
+    }
 }
 .articulo{
     color: white;
     width: 300px;
     height: 40%;
     margin-left: 10px;
-}
-.bttw{
-    width: 50px;
-
-}
-.sectionfooter{
-    /* float: right; */
-    height:5%; 
-    display: grid;
-    justify-items: right;
-    padding: 25px;
 }
 .redes{
     border-radius: 50%;

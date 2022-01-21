@@ -1,0 +1,244 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(./imagenes/fondo.jpg);
+  width: auto;
+  height: auto;
+}
+
+header {
+  width: 100%;
+  height: 300px;
+}
+
+header nav {
+  width: 150px;
+  height: 50px;
+  float: right;
+  margin-top: 5%;
+  margin-right: 50%;
+}
+
+header .logo {
+  width: 20%;
+  height: auto;
+  font-size: 40px;
+  position: absolute;
+  right: 43%;
+  text-decoration: none;
+  color: black;
+}
+
+.logo-productos {
+  width: 20%;
+  height: auto;
+  font-size: 40px;
+  position: absolute;
+  right: 50%;
+  text-decoration: none;
+  color: black;
+  padding: 100px;
+}
+
+.btn {
+  width: auto;
+  height: auto;
+  display: inline;
+  position: absolute;
+  top: 20%;
+  word-spacing: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.titulos {
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  background-color: rgba(185, 129, 39, 0.657);
+  width: auto;
+  height: auto;
+}
+
+main .ofertas {
+  width: 20%;
+  height: auto;
+  font-size: 40px;
+  position: absolute;
+  right: 43%;
+}
+
+main .skates {
+  width: 20%;
+  height: auto;
+  font-size: 40px;
+  position: absolute;
+  right: 43%;
+}
+
+.imgremera {
+  width: 600px;
+  height: 650px;
+  padding: 25px;
+  margin-top: 5%;
+  border-radius: 10%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.imgskates {
+  width: 600px;
+  height: 650px;
+  padding: 25px;
+  margin-top: 5%;
+  border-radius: 10%;
+}
+
+footer {
+  width: auto;
+  height: auto;
+  background-color: black;
+}
+
+footer .comentarios {
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+  padding: 25px;
+  margin-left: 10px;
+}
+
+footer .bttw {
+  width: 50px;
+}
+
+footer .sectionfooter {
+  height: 5%;
+  display: -ms-grid;
+  display: grid;
+  justify-items: right;
+  padding: 25px;
+}
+
+.articulo {
+  color: white;
+  width: 300px;
+  height: 40%;
+  margin-left: 10px;
+}
+
+.redes {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.logoComunidad {
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  right: 43%;
+}
+
+.video {
+  margin-top: 5%;
+  position: absolute;
+  right: 43%;
+}
+
+.mainComunidad2 {
+  height: 400px;
+  width: auto;
+}
+
+form {
+  width: auto;
+  height: 600px;
+}
+
+.mainProductos {
+  height: 500px;
+  width: auto;
+}
+
+.mainUbicacion {
+  height: 600px;
+  width: 100%;
+}
+
+.centrar {
+  width: 20%;
+  height: auto;
+  font-size: 40px;
+  position: absolute;
+  right: 43%;
+}
+
+.mapa {
+  width: 500px;
+  height: 500px;
+  font-size: 40px;
+  position: absolute;
+  right: 43%;
+  margin-top: 50px;
+}
+
+.gridsRemera {
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+}
+
+.gridsSkates {
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  display: -ms-grid;
+  display: grid;
+}
+
+@media screen and (max-width: 769px) {
+  .gridsRemera {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .imgremera {
+    width: 350px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .gridsSkates {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .imgskates {
+    width: 350px;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */
