@@ -6,239 +6,277 @@
 }
 
 body {
-  background-image: url(./imagenes/fondo.jpg);
   width: auto;
   height: auto;
 }
 
 header {
-  width: 100%;
-  height: 300px;
+  background-color: white;
 }
 
-header nav {
-  width: 150px;
-  height: 50px;
-  float: right;
-  margin-top: 5%;
-  margin-right: 50%;
+header div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .logo {
-  width: 20%;
-  height: auto;
-  font-size: 40px;
-  position: absolute;
-  right: 43%;
-  text-decoration: none;
-  color: black;
-}
-
-.logo-productos {
-  width: 20%;
-  height: auto;
-  font-size: 40px;
-  position: absolute;
-  right: 50%;
-  text-decoration: none;
-  color: black;
-  padding: 100px;
-}
-
-.btn {
-  width: auto;
-  height: auto;
-  display: inline;
-  position: absolute;
-  top: 20%;
-  word-spacing: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.titulos {
-  font-size: 40px;
-  text-decoration: none;
-  color: black;
+  float: left;
 }
 
 main {
-  background-color: rgba(185, 129, 39, 0.657);
   width: auto;
   height: auto;
 }
 
-main .ofertas {
-  width: 20%;
+main button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+main button.learn-more {
+  width: 12rem;
   height: auto;
-  font-size: 40px;
-  position: absolute;
-  right: 43%;
 }
 
-main .skates {
-  width: 20%;
+main button.learn-more .circle {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+main button.learn-more .circle .icon {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+main button.learn-more .circle .icon.arrow {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+main button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+main button.learn-more .button-text {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main button:hover .circle {
+  width: 100%;
+}
+
+main button:hover .circle .icon.arrow {
+  background: #fff;
+  -webkit-transform: translate(1rem, 0);
+          transform: translate(1rem, 0);
+}
+
+main button:hover .button-text {
+  color: #fff;
+}
+
+main .grid-container {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+main .grid-container2 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  display: -ms-grid;
+  display: grid;
+  padding: 20px;
+}
+
+main .texto {
+  text-align: center;
+}
+
+main .texto2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+main .titulos {
+  width: 100%;
   height: auto;
-  font-size: 40px;
+}
+
+main #galeria img:hover {
+  border: 5px solid white;
+}
+
+main #galeria .col-lg-6 {
+  padding: 20px;
+  /* From cssbuttons.io by @Cevorob */
+}
+
+main #galeria .col-lg-6 button {
+  position: relative;
+  height: 50px;
+  padding: 0 30px;
+  border: 2px solid #000;
+  background: #e8e8e8;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  -webkit-transition: all .05s linear;
+  transition: all .05s linear;
+  font-family: inherit;
+}
+
+main #galeria .col-lg-6 button:before, main #galeria .col-lg-6 button:after {
+  content: "";
   position: absolute;
-  right: 43%;
+  background: #e8e8e8;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
 }
 
-.imgremera {
-  width: 600px;
-  height: 650px;
-  padding: 25px;
-  margin-top: 5%;
-  border-radius: 10%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+main #galeria .col-lg-6 button:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
 }
 
-.imgskates {
-  width: 600px;
-  height: 650px;
-  padding: 25px;
-  margin-top: 5%;
-  border-radius: 10%;
+main #galeria .col-lg-6 button:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+}
+
+main #galeria .col-lg-6 button:hover {
+  cursor: crosshair;
+}
+
+main #galeria .col-lg-6 button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+main #galeria .col-lg-6 button:hover:before {
+  height: calc(100% - 32px);
+  top: 16px;
+}
+
+main #galeria .col-lg-6 button:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+}
+
+main #galeria .col-lg-6 button span {
+  font-size: 15px;
+  z-index: 3;
+  position: relative;
+  font-weight: 600;
+}
+
+main #galeria img {
+  width: 100%;
+}
+
+main .precio {
+  text-decoration: line-through;
+  text-align: center;
+}
+
+main .precio2 {
+  text-align: center;
 }
 
 footer {
   width: auto;
-  height: auto;
+  height: 100px;
   background-color: black;
 }
 
-footer .comentarios {
-  font-size: 40px;
-  text-decoration: none;
+footer .fab {
   color: white;
-  padding: 25px;
-  margin-left: 10px;
+  font-size: 25px;
 }
 
-footer .bttw {
-  width: 50px;
+footer .seguinos {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 5px;
+  margin-left: 10px;
 }
 
 footer .sectionfooter {
   height: 5%;
   display: -ms-grid;
   display: grid;
-  justify-items: right;
-  padding: 25px;
 }
 
-.articulo {
+footer .redes {
   color: white;
-  width: 300px;
-  height: 40%;
-  margin-left: 10px;
-}
-
-.redes {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-}
-
-.logoComunidad {
-  font-size: 40px;
-  text-decoration: none;
-  color: black;
-  position: absolute;
-  right: 43%;
 }
 
 .video {
   margin-top: 5%;
   position: absolute;
   right: 43%;
-}
-
-.mainComunidad2 {
-  height: 400px;
-  width: auto;
-}
-
-form {
-  width: auto;
-  height: 600px;
-}
-
-.mainProductos {
-  height: 500px;
-  width: auto;
-}
-
-.mainUbicacion {
-  height: 600px;
-  width: 100%;
-}
-
-.centrar {
-  width: 20%;
-  height: auto;
-  font-size: 40px;
-  position: absolute;
-  right: 43%;
-}
-
-.mapa {
-  width: 500px;
-  height: 500px;
-  font-size: 40px;
-  position: absolute;
-  right: 43%;
-  margin-top: 50px;
-}
-
-.gridsRemera {
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  display: -ms-grid;
-  display: grid;
-  gap: 20px;
-}
-
-.gridsSkates {
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  display: -ms-grid;
-  display: grid;
-}
-
-@media screen and (max-width: 769px) {
-  .gridsRemera {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .imgremera {
-    width: 350px;
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 769px) {
-  .gridsSkates {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
-  .imgskates {
-    width: 350px;
-    height: auto;
-  }
 }
 /*# sourceMappingURL=main.css.map */
