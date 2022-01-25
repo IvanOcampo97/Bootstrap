@@ -23,10 +23,6 @@ header div ul {
           justify-content: space-between;
 }
 
-header .logo {
-  float: left;
-}
-
 main {
   width: auto;
   height: auto;
@@ -132,40 +128,109 @@ main .grid-container {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
 }
 
-main .grid-container2 {
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  display: -ms-grid;
-  display: grid;
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+  main .grid-container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  main .grid-container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  main .grid-container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+  main .grid-container2 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  main .grid-container2 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  main .grid-container2 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+.flex-padre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
   padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-main .texto {
+img {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+}
+
+.texto {
   text-align: center;
 }
 
-main .texto2 {
+.texto2 {
   text-align: center;
   text-decoration: underline;
 }
 
-main .titulos {
+.titulos {
   width: 100%;
   height: auto;
 }
 
-main #galeria img:hover {
+#galeria img:hover {
   border: 5px solid white;
 }
 
-main #galeria .col-lg-6 {
+#galeria .col-lg-6 {
   padding: 20px;
   /* From cssbuttons.io by @Cevorob */
 }
 
-main #galeria .col-lg-6 button {
+#galeria .col-lg-6 button {
   position: relative;
   height: 50px;
   padding: 0 30px;
@@ -181,7 +246,8 @@ main #galeria .col-lg-6 button {
   font-family: inherit;
 }
 
-main #galeria .col-lg-6 button:before, main #galeria .col-lg-6 button:after {
+#galeria .col-lg-6 button:before,
+#galeria .col-lg-6 button:after {
   content: "";
   position: absolute;
   background: #e8e8e8;
@@ -189,56 +255,56 @@ main #galeria .col-lg-6 button:before, main #galeria .col-lg-6 button:after {
   transition: all .2s linear;
 }
 
-main #galeria .col-lg-6 button:before {
+#galeria .col-lg-6 button:before {
   width: calc(100% + 6px);
   height: calc(100% - 16px);
   top: 8px;
   left: -3px;
 }
 
-main #galeria .col-lg-6 button:after {
+#galeria .col-lg-6 button:after {
   width: calc(100% - 16px);
   height: calc(100% + 6px);
   top: -3px;
   left: 8px;
 }
 
-main #galeria .col-lg-6 button:hover {
+#galeria .col-lg-6 button:hover {
   cursor: crosshair;
 }
 
-main #galeria .col-lg-6 button:active {
+#galeria .col-lg-6 button:active {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
 
-main #galeria .col-lg-6 button:hover:before {
+#galeria .col-lg-6 button:hover:before {
   height: calc(100% - 32px);
   top: 16px;
 }
 
-main #galeria .col-lg-6 button:hover:after {
+#galeria .col-lg-6 button:hover:after {
   width: calc(100% - 32px);
   left: 16px;
 }
 
-main #galeria .col-lg-6 button span {
+#galeria .col-lg-6 button span {
   font-size: 15px;
   z-index: 3;
   position: relative;
   font-weight: 600;
 }
 
-main #galeria img {
+#galeria img {
   width: 100%;
 }
 
-main .precio {
+.precio {
   text-decoration: line-through;
   text-align: center;
 }
 
-main .precio2 {
+.precio2 {
   text-align: center;
 }
 

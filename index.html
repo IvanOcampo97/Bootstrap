@@ -20,29 +20,40 @@
     <div>
       <!-- nav var -->
       <!-- logo -->
-      <ul class="nav">
-        <a href="index.html" class="logo ">
-          <img src="./imagenes/logo.png">
-        </a>
-        <!-- logo -->
-        <li class="nav-item p-4">
-          <a class="nav-link active text-black" aria-current="page" href="pages/comunidad.html">Comunidad</a>
-        </li>
-        <li class="nav-item p-4">
-          <a class="nav-link text-black" href="pages/remeras.html">Remeras</a>
-        </li>
-        <li class="nav-item p-4">
-          <a class="nav-link text-black" href="pages/skates.html">Skates</a>
-        </li>
-        <li class="nav-item p-4">
-          <a class="nav-link text-black" href="pages/Camperas.html">Camperas</a>
-        </li>
-      </ul>
-    </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="./index.html" class="logo ">
+            <img src="./imagenes/logo.png">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav nav-pilss nav-fill me-auto mb-2 mb-lg-0">
+              <li class="nav-item p-4">
+                <a class="nav-link active text-white" aria-current="page" href="./pages/comunidad.html">Comunidad</a>
+              </li>
+              <li class="nav-item p-4">
+                <a class="nav-link text-white" href="./pages/remeras.html">Remeras</a>
+              </li>
+              <li class="nav-item p-4">
+                <a class="nav-link text-white" href="./pages/skates.html">Skates</a>
+              </li>
+              <li class="nav-item p-4">
+                <a class="nav-link text-white" href="./pages/Camperas.html">Camperas</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Comprar">
+              <button class="btn btn-outline-light" type="submit">Compra</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     <!-- nav var -->
     <!-- img -->
     <div class="div-header">
-      <img src="./imagenes/newArrivals.png" alt="">
+      <img src="./imagenes/newArrivals.png">
     </div>
     <!-- img -->
   </header>
@@ -90,7 +101,7 @@
     <!-- grid container -->
     <div class="grid-container">
       <!-- imagen remera -->
-      <div>
+      <div class="remera">
         <img src="./imagenes/remerae.jpg">
         <h4 class="titulos text-center">Remeras</h4>
         <button class="learn-more">
@@ -101,7 +112,7 @@
         </button>
 
       </div>
-      <div>
+      <div class="zapatillas">
         <img src="./imagenes/zapa.png">
         <h4 class="titulos text-center">Zapatillas</h4>
         <button class="learn-more">
@@ -111,7 +122,7 @@
           <span class="button-text">Comprar</span>
         </button>
       </div>
-      <div>
+      <div class="skates-grid">
         <img src="./imagenes/skate2.jpg">
         <h4 class="titulos text-center">Skates</h4>
         <button class="learn-more">
@@ -124,13 +135,13 @@
     </div>
     <!-- imagen remera -->
     <!-- imagen blanco y negro -->
-    <div class="grid-container2">
-      <div>
+    <div class="flex-padre">
+      <div class="flex-hijo">
         <img src="./imagenes/blancoynegro.jpg">
         <h1 class="texto">Hecho para el movimiento</h1>
         <h4 class="texto2">comprar pantalones</h4>
       </div>
-      <div>
+      <div class="flex-hijo">
         <img src="./imagenes/blancoynegro2.jpg">
         <h1 class="texto">Clasico</h1>
         <h4 class="texto2">comprar zapatillas</h4>

@@ -17,26 +17,36 @@
 <body>
   <!-- abre home  -->
   <header>
-    <div>
-      <ul class="nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <a href="../index.html" class="logo ">
           <img src="../imagenes/logo.png">
         </a>
-        <li class="nav-item p-4">
-          <a class="nav-link active text-black" aria-current="page" href="comunidad.html">Comunidad</a>
-        </li>
-        <li class="nav-item p-4">
-          <a class="nav-link text-black" href="remeras.html">Remeras</a>
-        </li>
-        <li class="nav-item p-4">
-          <a class="nav-link text-black" href="skates.html">Skates</a>
-        </li>
-        <li class="nav-item p-4">
-          <a class="nav-link text-black" href="Camperas.html">Camperas</a>
-        </li>
-      </ul>
-    </div>
-
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav nav-pilss nav-fill me-auto mb-2 mb-lg-0">
+            <li class="nav-item p-4">
+              <a class="nav-link active text-white" aria-current="page" href="comunidad.html">Comunidad</a>
+            </li>
+            <li class="nav-item p-4">
+              <a class="nav-link text-white" href="remeras.html">Remeras</a>
+            </li>
+            <li class="nav-item p-4">
+              <a class="nav-link text-white" href="skates.html">Skates</a>
+            </li>
+            <li class="nav-item p-4">
+              <a class="nav-link text-white" href="Camperas.html">Camperas</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Comprar">
+            <button class="btn btn-outline-light" type="submit">Compra</button>
+          </form>
+        </div>
+      </div>
+    </nav>
     <div class="div-header">
       <img src="../imagenes/newArrivals.png" alt="">
     </div>

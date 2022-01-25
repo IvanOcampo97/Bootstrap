@@ -1,147 +1,213 @@
 @import "varss";
 
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: auto;
     height: auto;
 }
-header{
+
+header {
     background-color: white;
-    div{
-        ul{
+
+    div {
+        ul {
             display: flex;
             justify-content: space-between;
         }
     }
-    .logo{
-        float: left;
-    }
 }
 
-main{
+main {
     width: auto;
     height: auto;
-        // boton comprar
-button {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    background: transparent;
-    padding: 0;
-    font-size: inherit;
-    font-family: inherit;
-   }
-   
-   button.learn-more {
-    width: 12rem;
-    height: auto;
-   }
-   
-   button.learn-more .circle {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: relative;
-    display: block;
-    margin: 0;
-    width: 3rem;
-    height: 3rem;
-    background: #282936;
-    border-radius: 1.625rem;
-   }
-   
-   button.learn-more .circle .icon {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: #fff;
-   }
-   
-   button.learn-more .circle .icon.arrow {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 0.625rem;
-    width: 1.125rem;
-    height: 0.125rem;
-    background: none;
-   }
-   
-   button.learn-more .circle .icon.arrow::before {
-    position: absolute;
-    content: "";
-    top: -0.29rem;
-    right: 0.0625rem;
-    width: 0.625rem;
-    height: 0.625rem;
-    border-top: 0.125rem solid #fff;
-    border-right: 0.125rem solid #fff;
-    transform: rotate(45deg);
-   }
-   
-   button.learn-more .button-text {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
-    color: #282936;
-    font-weight: 700;
-    line-height: 1.6;
-    text-align: center;
-    text-transform: uppercase;
-   }
-   
-   button:hover .circle {
-    width: 100%;
-   }
-   
-   button:hover .circle .icon.arrow {
-    background: #fff;
-    transform: translate(1rem, 0);
-   }
-   
-   button:hover .button-text {
-    color: #fff;
-   }
+
     // boton comprar
-    .grid-container{
+    button {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        vertical-align: middle;
+        text-decoration: none;
+        background: transparent;
+        padding: 0;
+        font-size: inherit;
+        font-family: inherit;
+    }
+
+    button.learn-more {
+        width: 12rem;
+        height: auto;
+    }
+
+    button.learn-more .circle {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background: #282936;
+        border-radius: 1.625rem;
+    }
+
+    button.learn-more .circle .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: #fff;
+    }
+
+    button.learn-more .circle .icon.arrow {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        left: 0.625rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+    }
+
+    button.learn-more .circle .icon.arrow::before {
+        position: absolute;
+        content: "";
+        top: -0.29rem;
+        right: 0.0625rem;
+        width: 0.625rem;
+        height: 0.625rem;
+        border-top: 0.125rem solid #fff;
+        border-right: 0.125rem solid #fff;
+        transform: rotate(45deg);
+    }
+
+    button.learn-more .button-text {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.75rem 0;
+        margin: 0 0 0 1.85rem;
+        color: #282936;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    button:hover .circle {
+        width: 100%;
+    }
+
+    button:hover .circle .icon.arrow {
+        background: #fff;
+        transform: translate(1rem, 0);
+    }
+
+    button:hover .button-text {
+        color: #fff;
+    }
+
+    // boton comprar
+    .grid-container {
         padding: 20px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
     }
-    .grid-container2{
-        grid-template-columns: 1fr 1fr;
-        display: grid;
-        padding: 20px;
+
+
+    // media
+
+    @media only screen and (min-width: 200px) and (max-width: 575px) {
+        .grid-container {
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
     }
-    .texto{
-        text-align: center;
+
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+        .grid-container {
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
     }
-    .texto2{
-        text-align: center;
-        text-decoration: underline;
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .grid-container {
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
     }
-    .titulos{
-        width: 100%;
-        height: auto;
+    // media 
+    // media
+    @media only screen and (min-width: 200px) and (max-width: 575px) {
+        .grid-container2 {
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 1fr;
+        }
     }
-    // main Comunidad
-    #galeria img:hover{
-        border: 5px solid white;
+
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+        .grid-container2 {
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 1fr;
+        }
     }
-    #galeria .col-lg-6{
-        padding: 20px;
-        /* From cssbuttons.io by @Cevorob */
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .grid-container2 {
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+    // media
+}
+
+.flex-padre {
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+img{
+    width: 100%;
+
+}
+iframe{
+    width: 100%;
+}
+.texto {
+    text-align: center;
+}
+
+.texto2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.titulos {
+    width: 100%;
+    height: auto;
+}
+
+// main Comunidad
+#galeria img:hover {
+    border: 5px solid white;
+}
+
+#galeria .col-lg-6 {
+    padding: 20px;
+
+    /* From cssbuttons.io by @Cevorob */
     button {
         position: relative;
         height: 50px;
@@ -152,92 +218,102 @@ button {
         white-space: nowrap;
         transition: all .05s linear;
         font-family: inherit;
-       }
-       
-       button:before, button:after {
+    }
+
+    button:before,
+    button:after {
         content: "";
         position: absolute;
         background: #e8e8e8;
         transition: all .2s linear;
-       }
-       
-       button:before {
+    }
+
+    button:before {
         width: calc(100% + 6px);
         height: calc(100% - 16px);
         top: 8px;
         left: -3px;
-       }
-       
-       button:after {
+    }
+
+    button:after {
         width: calc(100% - 16px);
         height: calc(100% + 6px);
         top: -3px;
         left: 8px;
-       }
-       
-       button:hover {
+    }
+
+    button:hover {
         cursor: crosshair;
-       }
-       
-       button:active {
+    }
+
+    button:active {
         transform: scale(0.95);
-       }
-       
-       button:hover:before {
+    }
+
+    button:hover:before {
         height: calc(100% - 32px);
         top: 16px;
-       }
-       
-       button:hover:after {
+    }
+
+    button:hover:after {
         width: calc(100% - 32px);
         left: 16px;
-       }
-       
-       button span {
+    }
+
+    button span {
         font-size: 15px;
         z-index: 3;
         position: relative;
         font-weight: 600;
-       }
     }
-    #galeria img{
-        width: 100%;
-    }
-    // main Comunidad
-
-
-    // main Remeras
-    .precio{
-        text-decoration: line-through;
-        text-align: center;
-    }
-    .precio2{
-        text-align: center;
-    }
-    // main Remeras
-    
 }
-footer{
+
+#galeria img {
+    width: 100%;
+}
+
+// main Comunidad
+
+
+// main Remeras
+.precio {
+    text-decoration: line-through;
+    text-align: center;
+}
+
+.precio2 {
+    text-align: center;
+}
+
+// main Remeras
+
+
+
+footer {
     width: auto;
-    height: 100px; 
+    height: 100px;
     background-color: black;
-    .fab{
+
+    .fab {
         color: white;
         font-size: 25px;
     }
-    .seguinos{
+
+    .seguinos {
         color: white;
         font-size: 20px;
         text-decoration: none;
         padding: 5px;
         margin-left: 10px;
     }
-    .sectionfooter{
-        height:5%; 
+
+    .sectionfooter {
+        height: 5%;
         display: grid;
         // padding: 15px;
     }
-    .redes{
+
+    .redes {
         color: white;
         border-radius: 50%;
         width: 50px;
@@ -246,7 +322,7 @@ footer{
     }
 }
 
-.video{
+.video {
     margin-top: 5%;
     position: absolute;
     right: 43%;
