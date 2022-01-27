@@ -1,4 +1,5 @@
 @import "varss";
+$titulos: dark;
 
 * {
     margin: 0%;
@@ -185,14 +186,20 @@ img{
 iframe{
     width: 100%;
 }
+// sass 2
 .texto {
-    text-align: center;
+    @if $titulos==dark {
+        text-align: center;
+    }
 }
 
 .texto2 {
-    text-align: center;
-    text-decoration: underline;
+    @if $titulos==dark {
+        text-align: center;
+        text-decoration: underline;
+    }
 }
+// sass 2
 
 .titulos {
     width: 100%;
